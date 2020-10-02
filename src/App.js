@@ -12,7 +12,7 @@ let boxes = [];
 for (const value of parsedData) {
   let hue = (value[0] / 22000) * 360;
   let saturation = Math.abs(value[1]);
-  console.log(hue, saturation);
+  // console.log(hue, saturation);
   boxes.push(`hsl(${hue}, ${saturation}%, 50%`);
 }
 
